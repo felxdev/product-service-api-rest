@@ -1,0 +1,3 @@
+api:
+  groupId: com.capitole.apis.products
+  artifactId: product-service-api-rest
