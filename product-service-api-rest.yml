@@ -7,7 +7,7 @@ info:
 servers:
   - url: https//localhost
 tags:
-  - name: rates
+  - name: products
     description: Products operations
 paths:
   /v1/rates:
@@ -41,7 +41,7 @@ paths:
             type: integer
           example: 1
       responses:
-        '201':
+        '200':
           description: successful operation
           content:
             application/json:
@@ -116,6 +116,8 @@ components:
             The error codes:
             [0] Bad request (see message for details)
             [1] Rate not found
+        message:
+          type: string
 
   responses:
     BadRequest:
